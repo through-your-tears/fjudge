@@ -1,0 +1,11 @@
+FROM python:3.9.6-alpine
+
+RUN \
+  apt-get update && \
+  apt-get install -y python python-dev && \
+  rm -rf /var/lib/apt/lists/
+
+COPY ${filepath} .
+
+RUN apk update \
+    && apk add gcc python3-dev musl-dev
