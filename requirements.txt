@@ -1,0 +1,6 @@
+psutil
+aiohttp
+aiohttp_cors
+seqlog
+motor
+aiohttp-swagger
